@@ -5,7 +5,7 @@
       "name": "Kayak",
       "category": "Watersports",
       "description": "A boat for one person",
-      "price": 275
+      "price": 276
     },
     {
       "id": 2,
@@ -64,6 +64,26 @@
       "price": 1200
     }
   ],
-  "categories": ["Watersports", "Soccer", "Chess"],
-  "orders": []
+  "categories": [
+    "Watersports",
+    "Soccer",
+    "Chess"
+  ],
+  "orders": [
+    {
+      "name": "Cho'liyev Abdujalil Abdunazarovich",
+      "email": "achuliev@wiut.uz",
+      "address": "Brooklyn",
+      "city": "Newyork",
+      "zip": "123456",
+      "country": "Amerika",
+      "products": [
+        {
+          "quantity": 1,
+          "product_id": 9
+        }
+      ],
+      "id": 1
+    }
+  ]
 }

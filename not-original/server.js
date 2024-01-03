@@ -18,7 +18,7 @@ app.use(cors());
 app.use(jsonServer.bodyParser);
 app.use(auth);
 
-const fileName = process.argv[2] || "./data.js";
+const fileName = process.argv[2] || "./productionData.json";
 const port = process.argv[3] || 3500;
 
 let router = undefined;
