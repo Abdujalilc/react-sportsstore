@@ -1,0 +1,20 @@
+********************graphql********************
+const queryResolvers = require("./serverQueriesResolver");
+const mutationResolvers = require("./serverMutationsResolver");
+
+let router = jsonServer.router("./productionData.json");
+
+let resolvers = { ...queryResolvers, ...mutationResolvers };
+
+let schema =
+      fs.readFileSync("./serverQueriesSchema.graphql", "utf-8") +
+      fs.readFileSync("./serverMutationsSchema.graphql", "utf-8");
+
+let graph = graphqlHTTP({
+    schema: buildSchema(schema),
+    rootValue: resolvers,
+    graphiql: true,
+    context: { db: router.db },
+});
+
+app.use("/graphql", (req, res, next) => graph(req, res, next));

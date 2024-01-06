@@ -1,0 +1,23 @@
+//development
+Urls.js:
+const RestUrls = {
+  [DataTypes.PRODUCTS]: `http://localhost:3500/api/products`,
+  [DataTypes.CATEGORIES]: `http://localhost:3500/api/categories`,
+  [DataTypes.ORDERS]: `http://localhost:3500/api/orders`,
+};
+npm start:
+"start": "npm-run-all --parallel reactstart webservice",
+"dev": "nodemon server.js",
+"reactstart": "react-scripts start",
+"webservice": "node server.js",
+
+---------------------------------------------
+//production 
+1. npm run build
+2. node server.js
+3. Urls.js:
+const RestUrls = {
+  [DataTypes.PRODUCTS]: `/api/products`,
+  [DataTypes.CATEGORIES]: `/api/categories`,
+  [DataTypes.ORDERS]: `/api/orders`,
+};
