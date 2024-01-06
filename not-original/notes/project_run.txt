@@ -5,6 +5,9 @@ const RestUrls = {
   [DataTypes.CATEGORIES]: `http://localhost:3500/api/categories`,
   [DataTypes.ORDERS]: `http://localhost:3500/api/orders`,
 };
+const GraphQLUrl = `http://localhost:3500/graphql`;
+const authUrl = `http://localhost:3500/login`;
+
 npm start:
 "start": "npm-run-all --parallel reactstart webservice",
 "dev": "nodemon server.js",
@@ -21,3 +24,5 @@ const RestUrls = {
   [DataTypes.CATEGORIES]: `/api/categories`,
   [DataTypes.ORDERS]: `/api/orders`,
 };
+const GraphQLUrl = `/graphql`;
+const authUrl = `/login`;
