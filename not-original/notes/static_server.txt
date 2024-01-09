@@ -3,4 +3,5 @@ serve -s build
 
 serve -l 3001 -s build
 
-Serve is developed by Vercel, a platform for deploying websites and applications4. Vercel also offers hosting, serverless functions, and other features to help you build and scale your projects4.
+Serve is developed by Vercel, a platform for deploying websites and applications4. 
+Vercel also offers hosting, serverless functions, and other features to help you build and scale your projects4.
