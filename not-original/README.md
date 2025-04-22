@@ -9,3 +9,5 @@ With little tweaks made on the react components and redux datastore
 # to start project
 read /notes/project_run.txt file
 
+# apollo graphql is used
+
